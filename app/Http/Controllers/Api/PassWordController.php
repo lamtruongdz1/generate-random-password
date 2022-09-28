@@ -11,6 +11,6 @@ class PassWordController extends Controller
         $random = str_shuffle('abcdefghjklmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ234567890!$%^&!$%^&');
         $password = substr($random, 0, 15);
         
-        return response()->json(['password'=>$password], 404);
+        return response()->json(['password'=>$password], 200);
     }
 }
